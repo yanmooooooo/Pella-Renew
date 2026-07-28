@@ -5,9 +5,8 @@ const http = require('http');
 const { execSync } = require('child_process');
 
 // ── 账号配置 ────────────────────────────────────────────────
-const [PELLA_EMAIL, PELLA_PASSWORD] = (process.env.PELLA_ACCOUNT || 'ipgkika@hi2.in,ipgkika3').split(',');
-const [TG_CHAT_ID, TG_TOKEN] = (process.env.TG_BOT || 'pellaqiandaobot,8874649352:AAFUsDdfoUMbBKmkxvymwODqqZyv8RScgb0
-').split(',');
+const [PELLA_EMAIL, PELLA_PASSWORD] = (process.env.PELLA_ACCOUNT || ',').split(',');
+const [TG_CHAT_ID, TG_TOKEN] = (process.env.TG_BOT || ',').split(',');
 
 const TIMEOUT = 120000;
 
